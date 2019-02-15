@@ -1,0 +1,42 @@
+a2shape
+
+Compile an Apple II shape table.
+
+
+Input file format is as follows:
+
+Each line is a shape.
+
+Each line consists of plot/move commands as follows:
+
+u = no-plot up
+r = no-plot right
+d = no-plot down
+l = no-plot left
+U = plot up
+R = plot right
+D = plot down
+L = plot left
+
+
+Example:
+
+LLLLLDDDDDRRRRRUUUUUllldddD
+RRRRRDDDDDLLLLLUUUUUrrrdddD
+
+That produces two shapes.
+Each shape is a box with a dot in the middle.
+The first is drawn counter clockwise, the second clockwise.
+
+
+Usage can be gotten by -h.
+
+
+Usage: a2shape.pl [-h] [-a] [-b] [-d] in_file out_file
+
+ -h  Print this usage
+ -a  Output shape table in Applesoft BASIC format
+ -b  Output shape table in binary format for BLOADing
+ -v  Turn on verbose
+ -d  Turn on debug
+
